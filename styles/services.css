@@ -1,0 +1,85 @@
+.services {
+	display: grid;
+	grid-template-areas:
+		'title title box1'
+		'box2 box3 box1'
+		'box4 box5 box6';
+	gap: 1.875rem;
+	margin-top: 11.25rem;
+}
+
+.services .title {
+	position: relative;
+	grid-area: title;
+	padding-left: 1.875rem;
+}
+
+.services .title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0.625rem;
+	height: 100%;
+	background-color: var(--clr-primary-1);
+}
+
+.services .feature-box {
+	position: relative;
+	width: 23.125rem;
+	height: 24.375rem;
+}
+
+#box1 {
+	height: 32.5rem;
+	grid-area: box1;
+}
+
+#box2 {
+	grid-area: box2;
+}
+
+#box3 {
+	grid-area: box3;
+}
+
+#box4 {
+	grid-area: box4;
+}
+
+#box5 {
+	grid-area: box5;
+}
+
+#box6 {
+	grid-area: box6;
+}
+
+.services .image-box {
+	width: 100%;
+	height: 100%;
+	background-color: var(--clr-primary-2);
+}
+
+.services .image-text {
+	height: 100%;
+	text-align: center;
+	padding-top: 6.875rem;
+}
+
+.services .text-box {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 9.375rem;
+	background-color: var(--clr-primary-1);
+	padding: 1.25rem;
+}
+
+.services .subtitle {
+	color: var(--clr-black);
+	margin-bottom: 0.625rem;
+}
+
+.services .text {
+	line-height: 1.4583rem;
+}

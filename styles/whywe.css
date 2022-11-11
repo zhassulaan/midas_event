@@ -1,0 +1,64 @@
+.whywe {
+	margin-top: 10.625rem;
+}
+
+.boxes {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.whywe .title {
+	position: sticky;
+	width: 35.625rem;
+	height: 18.125rem;
+	top: 0;
+	line-height: 8.125rem;
+	padding-bottom: 1.875rem;
+}
+	
+.whywe .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: calc(100% - 6.25rem);
+	height: 0.1875rem;
+	background-color: var(--clr-primary-1);
+}
+
+.whywe .features {
+	width: 31.25rem;
+	margin-top: -0.625rem;
+}
+
+.whywe .feature-box {
+	text-align: right;
+	margin-top: 2.5rem;
+}
+
+.whywe .feature-header {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.whywe .count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	border: 3px solid var(--clr-primary-1);
+	border-radius: 50%;
+	margin-left: 1.25rem;
+}
+
+.whywe .subtitle {
+	line-height: 3.125rem;
+}
+
+.whywe .text {
+	line-height: 1.5625rem;
+	margin-top: 1.25rem;
+}

@@ -1,0 +1,61 @@
+.contacts {
+	margin: 11.8125rem 0 11.25rem;
+}
+
+.contact-box {
+	width: 41.875rem;
+}
+
+.contacts .title {
+	position: relative;
+	padding-left: 1.875rem;
+	margin-bottom: 2.5rem;
+}
+
+.contacts .title:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0.625rem;
+	height: 100%;
+	background-color: var(--clr-primary-1);
+}
+
+.contact-box .text {
+	line-height: 2.5rem;
+	font-size: 26px;
+	margin-top: 0.625rem;
+}
+
+.contacts span {
+	font-weight: 600;
+	color: var(--clr-primary-1);
+}
+
+.social-box {
+	width: 29.375rem;
+}
+
+.contacts .subtitle {
+	text-align: right;
+	line-height: 3.125rem;
+	color: var(--clr-primary-1);
+	margin: 2.5rem 0.625rem 0 0;
+}
+
+.social-box .text {
+	text-align: right;
+	font-size: 22px;
+	margin-top: 1.875rem;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: end;
+	height: 2.5rem;
+	margin-top: 1.875rem;
+}
+
+.social-icons img {
+	margin-left: 1.25rem;
+}

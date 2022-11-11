@@ -1,0 +1,115 @@
+/* @keyframes fall {
+	100% {
+		transform: translateY(0);
+	}
+} */
+
+.home {
+	margin-top: 7.5rem;
+	z-index: 1;
+}
+
+.home .subtitle {
+	line-height: 3.125rem;
+	letter-spacing: 0.2em;
+	margin: 0 0 1.25rem -0.125rem;
+}
+
+.home .title {
+	height: 11.25rem;
+}
+
+/* .home .title span {
+	transform: translateY(-100vh);
+	animation: fall 3.5s forwards;
+}
+
+.home .title span:nth-child(2) {
+	animation-delay: 0.7s;
+}
+
+.home .title span:nth-child(3) {
+	animation-delay: 1.4s;
+}
+
+.home .title span:nth-child(4) {
+	animation-delay: 2.1s;
+}
+
+.home .title span:nth-child(5) {
+	animation-delay: 2.8s;
+} */
+
+.home .boxes {
+	position: relative;
+	display: flex;
+	height: 23.125rem;
+	gap: 1.875rem;
+	margin-top: 3.125rem;
+}
+
+.home .text-box,
+.home .image-box {
+	max-width: 35.625rem;
+}
+
+.home .text-box {
+	margin-top: 0.625rem;
+}
+
+.home .text-1 {
+	position: relative;
+	font-size: 22px;
+	margin-bottom: 10.625rem;
+	padding-left: 1.875rem;
+	cursor: pointer;
+	transition: padding 0.1s ease-in-out;
+}
+
+.home .text-1:hover {
+	padding-left: 3.125rem;
+}
+
+.home .text-2 {
+	position: relative;
+	text-align: right;
+	font-size: 18px;
+	margin-bottom: 1.875rem;
+	padding-right: 1.875rem;
+	cursor: pointer;
+	transition: padding 0.1s ease-in-out;
+}
+
+.home .text-2:hover {
+	padding-right: 3.125rem;
+}
+
+.home .text-1:before,
+.home .text-2:before {
+	content: "";
+	position: absolute;
+	width: 0.625rem;
+	height: 100%;
+	background-color: var(--clr-primary-1);
+}
+
+.home .text-1:before {
+	left: 0;
+}
+
+.home .text-2:before {
+	right: 0;
+}
+
+.home-box {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	background-color: var(--clr-primary-2);
+}
+
+.home-box .image-text {
+	height: 100%;
+	text-align: center;
+	padding: 10.3125rem 0;
+}

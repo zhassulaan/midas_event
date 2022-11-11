@@ -6,6 +6,7 @@
     --clr-white: #FFF;
     --clr-black: #000;
     --clr-primary-1: #DAB600;
+    --clr-primary-2: #F5F5F5;
 }
 
 @keyframes animateMaximize {
@@ -28,38 +29,17 @@
 	}
 }
 
-@keyframes animateButtonIn {
-	from {
-        background-color: var(--clr-black);
-		border: 1px solid var(--clr-white);
-	} to {
-        background-color: var(--clr-primary-1);
-        border: none;
-	}
-}
-
-@keyframes animateButtonOut {
-	from {
-        background-color: var(--clr-primary-1);
-        border: none;
-	} to {
-        background-color: var(--clr-black);
-		border: 1px solid var(--clr-white);
-	}
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-    background-color: var(--clr-black);
 }
 
 html,
 body {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
@@ -76,20 +56,33 @@ a {
     color: var(--clr-white);
 }
 
-h1 {
+h1,
+.title span {
     line-height: 11.25rem;
     font-size: 200px;
+    letter-spacing: 0.095em;
+    margin-left: -0.875rem;
+}
+
+.title span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--clr-white);
 }
 
 h2 {
+    line-height: 5.625rem;
     font-size: 100px;
 }
 
 h3 {
+    line-height: 3.75rem;
     font-size: 60px;
 }
 
 h4 {
+    line-height: 2.5rem;
     font-size: 40px;
 }
 
@@ -122,22 +115,88 @@ p {
 .container {
     display: grid;
 	justify-content: center;
+    background-color: var(--clr-black);
 }
 
 .content {
 	width: 73.125rem;
 }
 
-.button {
+.image-text {
+	color: var(--clr-black);
+}
+
+.buttons {
+	display: flex;
+	justify-content: end;
+}
+
+.arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-left: 1.25rem;
+	background-color: var(--clr-white);
     cursor: pointer;
+	transition: background 0.25s linear,
+					fill 0.25s linear;
+}
+
+.arrow:hover,
+.arrow:hover svg {
+	background-color: var(--clr-primary-1);
+}
+
+.arrow:hover svg {
+	fill: var(--clr-white);
+}
+
+.button {
+    width: 11.875rem;
+    height: 3.125rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-white);
+    background-color: transparent;
+    border: 1px solid var(--clr-white);
+    padding: 0.625rem 0;
+    transition: background 0.3s linear,
+                border 0.3s linear;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--clr-primary-1);
+    border: none;
 }
 
 
 /* HEADER */
-.navbar {
+.main1 {
+    position: relative;
+    background-image: url(/assets/main1.png);
+    background-size: cover;
+}
+
+.main1 .frame {
+	position: absolute;
+	width: 100vw;
+	height: 8.125rem;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.header {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25.925625rem;
+    width: 100%;
     padding: 1.875rem 0;
+    z-index: 10;
 }
 
 .nav-menu {
@@ -159,27 +218,21 @@ p {
     color: var(--clr-primary-1);
 }
 
-.nav-btn {
-    width: 11.875rem;
-    height: 3.125rem;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--clr-white);
-    background: var(--clr-black);
-    border: 1px solid var(--clr-white);
-    padding: 0.625rem 0;
-    transition: background 0.3s linear,
-                border 0.3s linear;
-}
-
-.nav-btn:hover {
-    background: var(--clr-primary-1);
-    border: none;
-}
-
-
 /* FOOTER */
+.main2 {
+    position: relative;
+    background-image: url(/assets/main2.png);
+    background-size: cover;
+}
+
+.main2 .frame {
+	position: absolute;
+	width: 100vw;
+	height: 8.125rem;
+	top: 0;
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .footer {
     display: flex;
     justify-content: space-between;

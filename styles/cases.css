@@ -1,0 +1,71 @@
+.cases {
+	margin-top: 11.875rem;
+}
+
+.cases .title {
+	position: relative;
+	text-align: right;
+	padding-right: 1.875rem;
+}
+
+.cases .title:before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 0.625rem;
+	height: 100%;
+	background-color: var(--clr-primary-1);
+}
+
+.cases .boxes {
+	display: flex;
+	height: 25.625rem;
+	gap: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+.cases .text-box,
+.cases .image-box {
+	width: 35.625rem;
+}
+
+.cases-box {
+	height: 100%;
+	background-color: var(--clr-primary-2);
+}
+
+.cases-box .image-text {
+	height: 100%;
+	text-align: center;
+	padding: 11.1875rem 0 11.9375rem;
+}
+
+.caseText .subtitle,
+.caseText .count {
+	margin-bottom: 1.25rem;
+}
+
+.cases .count {
+	position: relative;
+	text-align: left;
+	padding-left: 1.25rem;
+}
+
+.cases .count:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0.625rem;
+	height: 100%;
+	background-color: var(--clr-primary-1);
+}
+
+.cases .text {
+	width: 31.25rem;
+	line-height: 1.5625rem;
+	margin-bottom: 0.625rem;
+}
+
+.cases .buttons {
+	margin-top: 1.875rem;
+}
