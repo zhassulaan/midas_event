@@ -48,7 +48,7 @@
 	transform: scale(1.05);
 }
 
-#box1 {
+.services #box1 {
 	height: 32.5rem;
 	grid-area: box1;
 }
@@ -146,7 +146,7 @@
 		height: 19.5rem;
 	}
 	
-	#box1 {
+	.services #box1 {
 		height: 26.125rem;
 	}
 	
@@ -186,7 +186,7 @@
 		max-height: 25rem;
 	}
 	
-	#box1 {
+	.services #box1 {
 		height: 67.188vw;
 		max-height: 34.75rem;
 	}
@@ -201,5 +201,23 @@
 	
 	.services .text {
 		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.services {
+		display: block;
+		margin-top: 6.25rem;
+		padding-top: 0;
+	}
+
+	.services .title,
+	.services .feature-box {
+		width: 100%;
+	}
+
+	.services .feature-box {
+		height: 20.625rem;
+		margin-top: 1.25rem;
 	}
 }

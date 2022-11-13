@@ -145,15 +145,15 @@
                     <div class="main-text">
                         <h3>КАЧЕСТВО = ПРИОРИТЕТ</h3>
                         <div class="features">
-                            <div class="feature-box">
+                            <div class="feature-box" id="box1">
                                 <h4 class="subtitle">10</h4>
                                 <p class="text">Лет деятельности</p>
                             </div>
-                            <div class="feature-box">
+                            <div class="feature-box" id="box2">
                                 <h4 class="subtitle">30+</h4>
                                 <p class="text">Ивентов в год</p>
                             </div>
-                            <div class="feature-box">
+                            <div class="feature-box" id="box3">
                                 <h4 class="subtitle">2000+</h4>
                                 <p class="text">Довольных клиентов</p>
                             </div>
@@ -176,27 +176,27 @@
                     <h2 class="title">ПОЧЕМУ НАМ ДОВЕРЯЮТ</h2>
                     
                     <div class="features">
-                        <div class="feature-box">
+                        <div class="feature-box whywe-box" id="box1">
                             <div class="feature-header">
                                 <h4 class="subtitle">Лет деятельности</h4>
                                 <div class="count">
                                     <h4 class="subtitle">#1</h4>
                                 </div>
                             </div>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
                         </div>
                         
-                        <div class="feature-box">
+                        <div class="feature-box whywe-box">
                             <div class="feature-header">
                                 <h4 class="subtitle">Ивентов в год</h4>
                                 <div class="count">
                                     <h4 class="subtitle">#2</h4>
                                 </div>
                             </div>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
                         </div>
 
-                        <div class="feature-box">
+                        <div class="feature-box whywe-box">
                             <div class="feature-header">
                                 <h4 class="subtitle">Большой опыт</h4>
                                 <div class="count">
@@ -206,7 +206,7 @@
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
 
-                        <div class="feature-box">
+                        <div class="feature-box whywe-box">
                             <div class="feature-header">
                                 <h4 class="subtitle">Быстрая организация</h4>
                                 <div class="count">
@@ -216,7 +216,7 @@
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
 
-                        <div class="feature-box">
+                        <div class="feature-box whywe-box">
                             <div class="feature-header">
                                 <h4 class="subtitle">Гарантия качества</h4>
                                 <div class="count">
@@ -226,6 +226,21 @@
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
+
+                    <div class="buttons">
+                        <div class="arrow" onclick="plusWhyweSlides(-1)">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
+                            </svg>
+                        </div>
+                        <div class="arrow" onclick="plusWhyweSlides(1)">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <script src="script/whyweImage.js"></script>
                 </div>
             </section>
         </div>
@@ -297,7 +312,7 @@
             </section>
         </div>
         
-        <div class="container">
+        <!-- <div class="container">
             <section class="cases content" id="cases">
                 <h2 class="title">КЕЙСЫ</h2>
 
@@ -405,10 +420,10 @@
                 
                 <script src="script/formValidation.js"></script>
             </section>
-        </div>
+        </div> -->
     </main>
 
-    <div class="main2 container">
+    <!-- <div class="main2 container">
         <div class="frame"></div>
 
         <section class="contacts content" id="contacts">
@@ -473,6 +488,6 @@
             </p>
             </div>
         </footer>
-    </div>
+    </div> -->
 </body>
 </html>

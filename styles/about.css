@@ -198,8 +198,147 @@
 		margin-top: 1.25rem;
 		padding-top: 1.25rem;
 	}
-	
+
 	.about .buttons {
 		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.about .boxes {
+		height: 20rem;
+		margin-bottom: 1.875rem;
+	}
+
+	.about-box .image-text {
+		font-size: 30px;
+		padding: 9.0625rem 0;
+	}
+
+	.about .text-box {
+		flex-direction: column-reverse;
+		height: max-content;
+		padding: 0;
+	}
+
+	.about .text-box:before,
+	h3 {
+		display: none;
+	}
+
+	.about .features {
+		width: 80%;
+		margin: 0.625rem auto 0;
+	}
+
+	.about .feature-box {
+		width: 30%;
+	}
+
+	.about .subtitle {
+		line-height: 3.125rem;
+	}
+
+	.about .feature-box .text {
+		font-size: 16px;
+	}
+
+	.paragraph {
+		width: 80%;
+		text-align: left;
+		margin: 0 auto;
+	}
+	
+	.paragraph .text {
+		line-height: 1.5625rem;
+		margin-bottom: 1.25rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.about .title {
+		line-height: 3.75rem;
+	}
+
+	.about .boxes {
+		height: 17.5rem;
+	}
+
+	.about-box .image-text {
+		font-size: 24px;
+		padding: 7.8125rem 0;
+	}
+
+	.about .features {
+		width: 100%;
+	}
+
+	.about .subtitle {
+		line-height: 2.8125rem;
+	}
+
+	.paragraph {
+		width: 100%;
+		text-align: left;
+	}
+
+	.paragraph .text {
+		line-height: 1.3545rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.about .title {
+		line-height: 2.5rem;
+		padding-left: 0.625rem;
+	}
+
+	.about .title:before {
+		width: 0.3125rem;
+	}
+
+	.about .boxes {
+		height: 15rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.about-box .image-text {
+		line-height: 1.25rem;
+		font-size: 20px;
+		padding: 6.875rem 0;
+	}
+	
+	.about .features {
+		display: grid;
+		grid-template-areas:
+			'box1 box2'
+			'box3 box3';
+	}
+
+	.about .feature-box {
+		width: 43.056vw;
+	}
+	
+	.about .feature-box#box1 {
+		grid-area: box1;
+	}
+
+	.about .feature-box#box2 {
+		grid-area: box2;
+	}
+
+	.about .feature-box#box3 {
+		width: 100%;
+		grid-area: box3;
+	}
+
+	.about .subtitle {
+		line-height: 2.5rem;
+		margin-bottom: 0.3125rem;
+		padding-bottom: 0.625rem;
+	}
+
+	.about .subtitle:before {
+		height: 0.125rem;
 	}
 }

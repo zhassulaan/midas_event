@@ -271,9 +271,22 @@ p {
         font-size: 96px;
     }
 
+    h2 {
+        font-size: 50px;
+        margin-bottom: 1.25rem;
+    }
+
+    h4 {
+        font-size: 45px;
+    }
+    
     h5 {
         line-height: 1.875rem;
         font-size: 22px;
+    }
+    
+    p {
+        font-size: 15px;
     }
 
     .content {
@@ -286,11 +299,19 @@ p {
         line-height: 5rem;
         font-size: 72px;
     }
+
+    h2, h4 {
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 480px) {
     h1 {
         line-height: 3.125rem;
         font-size: 54px;
+    }
+
+    h2, h4 {
+        font-size: 40px;
     }
 }
