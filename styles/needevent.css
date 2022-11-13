@@ -239,3 +239,59 @@ input::placeholder {
 		margin: -1.5625rem 0 0 10rem;
 	}
 }
+
+@media (max-width: 992px) {
+	.needevent .title {
+		padding-left: 1.25rem;
+	}
+
+	.needevent .title:hover {
+		line-height: 3.75rem;
+		padding-bottom: 0.625rem;
+	}
+
+	.form-box {
+		width: 50.781vw;
+	}
+
+	input {
+		width: 40vw;
+		margin: 1.875rem 0 0 1.25rem;
+	}
+
+	input,
+	input::placeholder {
+		font-size: 18px;
+	}
+
+	.confirm-box {
+		width: 35.156vw;
+	}
+
+	.text1-box .text-1 {
+		line-height: 2.1875rem;
+		font-size: 24px;
+		margin-top: 1.875rem;
+	}
+
+	.text1-box img {
+		width: 3.75rem;
+		margin: -1.25rem 0 0 11.25rem;
+	}
+	
+	.text1-box:hover img {
+		margin-left: 12.5rem;
+	}
+
+	.needevent select,
+	.needevent option {
+		font-size: 14px;
+	}
+
+	.needevent select {
+		height: 3.125rem;
+		margin: 3.125rem 0 2.5rem;
+		padding: 0.75rem 1.875rem 0.5rem 1.25rem;
+	}
+
+}

@@ -156,3 +156,41 @@
 		padding: 9.625rem 0 10.0625rem;
 	}
 }
+
+@media (max-width: 992px) {
+	.cases .title:hover {
+		line-height: 3.75rem;
+		padding-bottom: 0.625rem;
+	}
+	
+	.cases .boxes {
+		flex-direction: column;
+		height: max-content;
+		gap: 0;
+	}
+
+	.cases .text-box,
+	.cases .buttons,
+	.cases .image-box {
+		width: 100%;
+	}
+
+	.caseText,
+	.cases .buttons,
+	.cases-box {
+		position: initial;
+	}
+
+	.cases h4 {
+		line-height: 2.5rem;
+		font-size: 32px;
+	}
+
+	.cases .text {
+		width: 80%;
+	}
+
+	.cases .buttons {
+		margin: -1.25rem 0 1.25rem;
+	}
+}

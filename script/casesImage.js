@@ -25,10 +25,14 @@ function showCasesSlides(n) {
 
 	for (let i = 0; i < text.length; i++) {
 		text[i].style.opacity = "0";
+		text[i].style.height = "0";
 		image[i].style.opacity = "0";
+		image[i].style.height = "0";
 	}
 	text[slideCasesIndex - 1].style.opacity = "1";
+	text[slideCasesIndex - 1].style.height = "max-content";
 	text[slideCasesIndex - 1].style.transition = "all 1.5s ease-in-out";;
 	image[slideCasesIndex - 1].style.opacity = "1";
+	image[slideCasesIndex - 1].style.height = "max-content";
 	image[slideCasesIndex - 1].style.transition = "all 1.5s ease-in-out";;
 }

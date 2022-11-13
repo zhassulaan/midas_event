@@ -97,3 +97,30 @@
 		height: 4.375rem;
 	}
 }
+
+@media (max-width: 992px) {
+	.whywe .title {
+		width: 36.458vw;
+		height: 10.625rem;
+		line-height: 4.375rem;
+		font-size: 52px;
+		padding-bottom: 1.25rem;
+	}
+
+	.whywe .features {
+		width: 46.875vw;
+	}
+	
+	.whywe .feature-box {
+		margin-top: 1.875rem;
+	}
+
+	.whywe .count {
+		width: 3.75rem;
+		height: 3.75rem;
+	}
+
+	.whywe .text {
+		margin-top: 0.9375rem;
+	}
+}

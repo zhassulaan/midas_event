@@ -109,3 +109,14 @@
 		font-size: 18px;
 	}
 }
+
+@media (max-width: 992px) {
+	.contact-box .text {
+		line-height: 1.875rem;
+		font-size: 19px;
+	}
+
+	.social-box .text {
+		font-size: 17px;
+	}
+}

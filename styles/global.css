@@ -236,7 +236,61 @@ p {
 }
 
 @media (max-width: 992px) {
+    h1 {
+        line-height: 7.5rem;
+        font-size: 114px;
+        margin: 0;
+    }
+
+    h2 {
+        line-height: 5rem;
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        line-height: 1.875rem;
+        font-size: 26px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
     .content {
-        width: 45.5rem;
+        width: 88.28125vw;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        line-height: 6.25rem;
+        font-size: 96px;
+    }
+
+    h5 {
+        line-height: 1.875rem;
+        font-size: 22px;
+    }
+
+    .content {
+        width: 88.889vw;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        line-height: 5rem;
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        line-height: 3.125rem;
+        font-size: 54px;
     }
 }

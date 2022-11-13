@@ -134,6 +134,10 @@
 	.about .title {
 		line-height: 5.625rem;
 	}
+	
+	.about .title:hover {
+		line-height: 4.375rem;
+	}
 
 	.about .boxes {
 		height: 21.875rem;
@@ -153,5 +157,49 @@
 
 	.paragraph {
 		width: 25rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.about .title {
+		line-height: 4.375rem;
+	}
+	
+	.about .title:hover {
+		line-height: 3.75rem;
+		padding-bottom: 0.625rem;
+	}
+
+	.about .boxes {
+		height: 21.25rem;
+		margin-bottom: 1.875rem;
+	}
+
+	.about-box .image-text {
+		padding: 9.5625rem 0;
+	}
+
+	.about .features {
+		width: 45.573vw;
+		margin-top: 2.5rem;
+	}
+	
+	.about .feature-box {
+		width: 13.672vw;
+	}
+	
+	.paragraph {
+		width: 40.365vw;
+	}
+}
+
+@media (max-width: 992px) {
+	.about {
+		margin-top: 1.25rem;
+		padding-top: 1.25rem;
+	}
+	
+	.about .buttons {
+		display: none;
 	}
 }

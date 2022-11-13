@@ -117,6 +117,10 @@
 	.services .title {
 		line-height: 6.625rem;
 	}
+
+	.services .title:hover {
+		line-height: 4.75rem;
+	}
 	
 	.services .feature-box {
 		width: 21.5rem;
@@ -131,6 +135,10 @@
 	
 	.services .title {
 		line-height: 5.625rem;
+	}
+
+	.services .title:hover {
+		line-height: 3.75rem;
 	}
 	
 	.services .feature-box {
@@ -159,5 +167,39 @@
 			'box2 box1'
 			'box3 box4'
 			'box5 box6';
+	}
+
+	.services .title {
+		width: 75%;
+		line-height: 4.375rem;
+		letter-spacing: 0.2em;
+	}
+
+	.services .title:hover {
+		line-height: 3.75rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.services .feature-box {
+		width: 43.490vw;
+		height: 46.875vw;
+		max-height: 25rem;
+	}
+	
+	#box1 {
+		height: 67.188vw;
+		max-height: 34.75rem;
+	}
+
+	.services .image-text {
+		font-size: 32px;
+	}
+
+	.services .subtitle {
+		font-size: 18px;
+	}
+	
+	.services .text {
+		font-size: 15px;
 	}
 }
