@@ -24,9 +24,11 @@ function showCasesSlides(n) {
 	} 
 
 	for (let i = 0; i < text.length; i++) {
-		text[i].style.display = "none";
-		image[i].style.display = "none";
+		text[i].style.opacity = "0";
+		image[i].style.opacity = "0";
 	}
-	text[slideCasesIndex - 1].style.display = "block";
-	image[slideCasesIndex - 1].style.display = "block";
+	text[slideCasesIndex - 1].style.opacity = "1";
+	text[slideCasesIndex - 1].style.transition = "all 1.5s ease-in-out";;
+	image[slideCasesIndex - 1].style.opacity = "1";
+	image[slideCasesIndex - 1].style.transition = "all 1.5s ease-in-out";;
 }

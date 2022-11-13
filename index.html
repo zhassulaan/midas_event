@@ -9,6 +9,7 @@
 
     <!-- CSS -->
 	<link rel="stylesheet" href="styles/global.css">
+	<link rel="stylesheet" href="styles/navbar.css">
 	<link rel="stylesheet" href="styles/home.css">
 	<link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/whywe.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="styles/cases.css">
     <link rel="stylesheet" href="styles/needevent.css">
     <link rel="stylesheet" href="styles/contacts.css">
+	<link rel="stylesheet" href="styles/footer.css">
     <!-- Typing -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
@@ -38,7 +40,7 @@
                 </li>
             </ul>
             
-            <a href="#contacts">
+            <a href="#needevent">
                 <button class="button">
                     Оставить заявку
                 </button>
@@ -68,20 +70,22 @@
 
             <div class="boxes">
                 <div class="text-box">
-                    <p class="text-1">Мы создаём не просто ивенты, но яркие воспоминания.</p>
-                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="texts">
+                        <p class="text-1">Мы создаём не просто ивенты, но яркие воспоминания.</p>
+                        <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
 
-                    <div class="buttons">
-                        <div class="arrow" onclick="plusSlides(-1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
-                            </svg>
-                        </div>
-                        <div class="arrow" onclick="plusSlides(1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
-                            </svg>
-                        </div>
+                <div class="buttons">
+                    <div class="arrow" onclick="plusSlides(-1)">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
+                        </svg>
+                    </div>
+                    <div class="arrow" onclick="plusSlides(1)">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
+                        </svg>
                     </div>
                 </div>
 
@@ -111,37 +115,37 @@
     <main>
         <div class="container">
             <section class="about content" id="about">
-                <div class="box-header">
-                    <h2 class="title">О КОМПАНИИ</h2>
+                <h2 class="title">О КОМПАНИИ</h2>
 
-                    <div class="buttons">
-                        <div class="arrow" onclick="plusAboutSlides(-1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
-                            </svg>
-                        </div>
-                        <div class="arrow" onclick="plusAboutSlides(1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
-                            </svg>
-                        </div>
+                <div class="buttons">
+                    <div class="arrow" onclick="plusAboutSlides(-1)">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
+                        </svg>
+                    </div>
+                    <div class="arrow" onclick="plusAboutSlides(1)">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
+                        </svg>
                     </div>
                 </div>
 
-                <div class="image-box about-box">
-                    <h4 class="image-text">Фото-карусель</р4>
-                </div>
-                <div class="image-box about-box">
-                    <h4 class="image-text">Фото-карусель2</р4>
-                </div>
-                <div class="image-box about-box">
-                    <h4 class="image-text">Фото-карусель3</р4>
-                </div>
-                <div class="image-box about-box">
-                    <h4 class="image-text">Фото-карусель4</р4>
-                </div>
-                <div class="image-box about-box">
-                    <h4 class="image-text">Фото-карусель5</р4>
+                <div class="boxes">
+                    <div class="image-box about-box">
+                        <h4 class="image-text">Фото-карусель</р4>
+                    </div>
+                    <div class="image-box about-box">
+                        <h4 class="image-text">Фото-карусель2</р4>
+                    </div>
+                    <div class="image-box about-box">
+                        <h4 class="image-text">Фото-карусель3</р4>
+                    </div>
+                    <div class="image-box about-box">
+                        <h4 class="image-text">Фото-карусель4</р4>
+                    </div>
+                    <div class="image-box about-box">
+                        <h4 class="image-text">Фото-карусель5</р4>
+                    </div>
                 </div>
 
                 <div class="text-box">
@@ -239,7 +243,7 @@
 
                 <div id="box1" class="feature-box">
                     <div class="image-box">
-                        <h5 class="image-text">Фото</h5>
+                        <img src="/assets/picture1.png" alt="picture 1">
                     </div>
                     <div class="text-box">
                         <h6 class="subtitle">Название услуги</h6>
@@ -372,33 +376,41 @@
         </div>
         
         <div class="container">
-            <section class="needevent content">
-                <div class="form-box">
-                    <h2 class="title">НУЖЕН ИВЕНТ?</h2>
-                    <input type="text" id="name" name="name" placeholder="Ваше имя *">
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Ваш телефон *">
-                    <input type="email" id="email" name="email" placeholder="Ваш e-mail *">
-                </div>
+            <section class="needevent content" id="needevent">
+                <form id="form" action="#">
+                    <div class="form-box">
+                        <h2 class="title">НУЖЕН ИВЕНТ?</h2>
+                        <input type="text" id="user" name="user" placeholder="Ваше имя *">
+                        <input type="tel" id="phone" name="phone" pattern="^\d{3}?\d{4}?\d{2}?\d{2}$" placeholder="Ваш телефон *" maxlength="11">
+                        <input type="email" id="email" name="email" placeholder="Ваш e-mail *">
+                    </div>
 
-                <div class="confirm-box">
-                    <p class="text-1">Оставьте заявку и мы вам поможем</p>
-                    <img src="/assets/arrow.svg" alt="open arrow">
+                    <div class="confirm-box">
+                        <div class="text1-box">
+                            <p class="text-1">Оставьте заявку и мы вам поможем</p>
+                            <img src="/assets/arrow.svg" alt="open arrow">
+                        </div>
 
-                    <select name="celebrity" id="celebrity">
-                        <option value="" disabled selected>Выберите тип мероприятия</option>
-                        <option value="option 1" label="option 1"></option>
-                        <option value="option 2" label="option 2"></option>
-                        <option value="option 3" label="option 3"></option>
-                        <option value="option 4" label="option 4"></option>
-                        <option value="option 5" label="option 5"></option>
-                    </select>
+                        <select name="celebrity" id="celebrity">
+                            <option value="" disabled selected>Выберите тип мероприятия</option>
+                            <option value="option 1" label="option 1"></option>
+                            <option value="option 2" label="option 2"></option>
+                            <option value="option 3" label="option 3"></option>
+                            <option value="option 4" label="option 4"></option>
+                            <option value="option 5" label="option 5"></option>
+                        </select>
 
-                    <p class="text-2">Нажимая на кнопку “отправить заявку” принимаете условия политики конфиденциальности</p>
+                        <p class="text-2">Нажимая на кнопку “отправить заявку” принимаете условия политики конфиденциальности</p>
 
-                    <button class="send-btn button">
-                        Отправить заявку
-                    </button>
-                </div>
+                        <div class="send-btn button" id="button" onclick="validation()">
+                            <img src="/assets/loading.svg" alt="loading" id="loading">
+                            <img src="/assets/success.svg" alt="success" id="success">
+                            <p id="btn-text" class="button-text">Отправить заявку</p>
+                        </div>
+                    </div>
+                </form>
+                
+                <script src="script/formValidation.js"></script>
             </section>
         </div>
     </main>

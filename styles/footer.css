@@ -1,0 +1,45 @@
+.main2 {
+	position: relative;
+	background-image: url(/assets/main2.png);
+	background-size: cover;
+	z-index: 9;
+}
+
+.main2 .frame {
+  position: absolute;
+  width: 100vw;
+  height: 8.125rem;
+  top: 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.875rem;
+}
+
+.policy-text {
+	width: 29.3125rem;
+	height: 3.75rem;
+	line-height: 1.25rem;
+}
+
+.athenaplus {
+	margin-top: auto;
+}
+
+.athenaplus .url {
+	text-decoration: underline;
+	font-weight: 500;
+}
+	
+.url:not(:hover) {
+	animation: animateMinimize 0.2s linear;
+}
+
+.url:hover {
+	color: var(--clr-primary-1);
+	font-size: 18px;
+	animation: animateMaximize 0.2s linear;
+}

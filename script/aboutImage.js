@@ -23,7 +23,8 @@ function showAboutSlides(n) {
 	} 
 
 	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+		slides[i].style.opacity = "0";
 	}
-	slides[slideAboutIndex - 1].style.display = "block";
+	slides[slideAboutIndex - 1].style.opacity = "1";
+	slides[slideAboutIndex - 1].style.transition = "all 1.5s ease-in-out";
 }

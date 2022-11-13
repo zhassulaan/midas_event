@@ -56,19 +56,11 @@ a {
     color: var(--clr-white);
 }
 
-h1,
-.title span {
+h1 {
     line-height: 11.25rem;
     font-size: 200px;
     letter-spacing: 0.095em;
     margin-left: -0.875rem;
-}
-
-.title span {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--clr-white);
 }
 
 h2 {
@@ -103,6 +95,7 @@ h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     color: var(--clr-white);
+    cursor: pointer;
 }
 
 p {
@@ -110,6 +103,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     color: var(--clr-white);
+    cursor: pointer;
 }
 
 .container {
@@ -173,93 +167,76 @@ p {
     border: none;
 }
 
+@media (max-width: 1366px) {
+    h1 {
+        font-size: 180px;
+    }
+   
+    h2 {
+        font-size: 80px;
+    }
+   
+    h3 {
+        font-size: 50px;
+    }
+   
+    h4 {
+        font-size: 36px;
+    }
+  
+    p {
+        font-size: 15px;
+    }
 
-/* HEADER */
-.main1 {
-    position: relative;
-    background-image: url(/assets/main1.png);
-    background-size: cover;
+    .content {
+        width: 67.5rem;
+    }
 }
 
-.main1 .frame {
-	position: absolute;
-	width: 100vw;
-	height: 8.125rem;
-	bottom: 0;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-}
+@media (max-width: 1220px) {
+    h1 {
+        line-height: 8.4375rem;
+        font-size: 150px;
+    }
 
-.header {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    gap: 25.925625rem;
-    width: 100%;
-    padding: 1.875rem 0;
-    z-index: 10;
-}
+    h2 {
+        font-size: 70px;
+    }
 
-.nav-menu {
-	display: flex;
-	align-items: center;
-}
-
-.nav-item {
-    margin-right: 3.75rem;
-}
-
-.nav-link {
-    line-height: 1.875rem;
-    font-size: 20px;
-    transition: color 0.1s ease-in-out;
-}
-
-.nav-link:hover {
-    color: var(--clr-primary-1);
-}
-
-/* FOOTER */
-.main2 {
-    position: relative;
-    background-image: url(/assets/main2.png);
-    background-size: cover;
-}
-
-.main2 .frame {
-	position: absolute;
-	width: 100vw;
-	height: 8.125rem;
-	top: 0;
-	background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.875rem;
-}
-
-.policy-text {
-    width: 29.3125rem;
-    height: 3.75rem;
-    line-height: 1.25rem;
-}
-
-.athenaplus {
-    margin-top: auto;
-}
-
-.athenaplus .url {
-    text-decoration: underline;
-    font-weight: 500;
-}
+    h3 {
+        font-size: 45px;
+    }
     
-.url:not(:hover) {
-    animation: animateMinimize 0.2s linear;
+    h4 {
+        line-height: 2.25rem;
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 26px;
+    }
+    
+    h6 {
+        line-height: 1.25rem;
+        font-size: 18px;
+    }
+
+    p {
+        line-height: 1.75rem;
+        font-size: 14px;
+    }
+
+    .content {
+        width: 57.5rem;
+    }
+
+    .button {
+        font-size: 18px;
+    }
 }
 
-.url:hover {
-    color: var(--clr-primary-1);
-    font-size: 18px;
-    animation: animateMaximize 0.2s linear;
+@media (max-width: 992px) {
+    .content {
+        width: 45.5rem;
+    }
 }

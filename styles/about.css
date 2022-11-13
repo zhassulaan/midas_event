@@ -1,36 +1,51 @@
 .about {
-	margin-top: 11.875rem;
+	margin-top: 5.625rem;
+	padding-top: 6.25rem;
 }
 
 .about .title {
 	position: relative;
-	width: 37.5rem;
+	width: max-content;
 	line-height: 6.25rem;
 	padding-left: 1.875rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.about .title:hover {
+	line-height: 5rem;
+	padding-bottom: 1.25rem;
 }
 
 .about .title:before {
 	content: "";
 	position: absolute;
+	bottom: 0;
 	left: 0;
 	width: 0.625rem;
 	height: 100%;
 	background-color: var(--clr-primary-1);
+	transition: all 0.3s ease-in-out;
 }
 
-.about .box-header {
-	margin-bottom: 1.25rem;
+.about .title:hover:before {
+	height: 50%;
 }
 
 .about .buttons {
-	margin-top: -1.875rem;
+	margin: -1.875rem 0 1.25rem;
+}
+
+.about .boxes {
+	width: 100%;
+	height: 24.375rem;
+	margin-bottom: 2.5rem;
 }
 
 .about-box {
+	position: absolute;
 	width: 100%;
-	height: 24.375rem;
+	height: 100%;
 	background-color: var(--clr-primary-2);
-	margin-bottom: 2.5rem;
 }
 
 .about-box .image-text {
@@ -73,6 +88,11 @@
 	position: relative;
 	margin-bottom: 0.625rem;
 	padding-bottom: 1.25rem;
+	transition: font-size 0.3s ease-in-out;
+}
+
+.about .subtitle:hover {
+	font-size: 50px;
 }
 
 .about .subtitle:before {
@@ -98,4 +118,40 @@
 .paragraph .text {
 	line-height: 1.375rem;
 	margin-bottom: 1.625rem;
+}
+
+@media (max-width: 1366px) {
+	.about {
+		margin-top: 4.375rem;
+	}
+}
+
+@media (max-width: 1220px) {
+	.about {
+		margin-top: 3.75rem;
+	}
+
+	.about .title {
+		line-height: 5.625rem;
+	}
+
+	.about .boxes {
+		height: 21.875rem;
+	}
+
+	.about-box .image-text {
+		padding: 9.5rem 0 10.125rem;
+	}
+
+	.about .features {
+		width: 28.75rem;
+	}
+
+	.about .subtitle {
+		padding-bottom: 0.9375rem;
+	}
+
+	.paragraph {
+		width: 25rem;
+	}
 }

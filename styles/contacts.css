@@ -10,15 +10,27 @@
 	position: relative;
 	padding-left: 1.875rem;
 	margin-bottom: 2.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.contacts .title:hover {
+	line-height: 3.75rem;
+	padding-bottom: 1.875rem;
 }
 
 .contacts .title:before {
 	content: "";
 	position: absolute;
+	bottom: 0;
 	left: 0;
 	width: 0.625rem;
 	height: 100%;
 	background-color: var(--clr-primary-1);
+	transition: all 0.3s ease-in-out;
+}
+
+.contacts .title:hover:before {
+	height: 50%;
 }
 
 .contact-box .text {
@@ -58,4 +70,42 @@
 
 .social-icons img {
 	margin-left: 1.25rem;
+	transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 1366px) {
+	.contacts {
+		margin-top: 10.5625rem;
+	}
+
+	.contact-box .text {
+		font-size: 24px;
+	}
+
+	.social-box {
+		width: 29.375rem;
+	}
+
+	.social-box .text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.contacts {
+		margin: 9.9375rem 0 10rem;
+	}
+
+	.contact-box .text {
+		line-height: 2.1875rem;
+		font-size: 21px;
+	}
+
+	.social-box .text {
+		font-size: 18px;
+	}
 }

@@ -5,28 +5,47 @@
 		'box2 box3 box1'
 		'box4 box5 box6';
 	gap: 1.875rem;
-	margin-top: 11.25rem;
+	margin-top: 5rem;
+	padding-top: 6.25rem;
 }
 
 .services .title {
 	position: relative;
 	grid-area: title;
+	width: max-content;
 	padding-left: 1.875rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.services .title:hover {
+	line-height: 3.75rem;
+	padding-bottom: 1.875rem;
 }
 
 .services .title:before {
 	content: "";
 	position: absolute;
+	bottom: 0;
 	left: 0;
 	width: 0.625rem;
 	height: 100%;
 	background-color: var(--clr-primary-1);
+	transition: all 0.3s ease-in-out;
+}
+
+.services .title:hover:before {
+	height: 50%;
 }
 
 .services .feature-box {
 	position: relative;
 	width: 23.125rem;
 	height: 24.375rem;
+	transition: transform 0.4s ease-in-out;
+}
+
+.services .feature-box:hover {
+	transform: scale(1.05);
 }
 
 #box1 {
@@ -60,6 +79,11 @@
 	background-color: var(--clr-primary-2);
 }
 
+.services .image-box img {
+	width: 100%;
+	height: 100%;
+}
+
 .services .image-text {
 	height: 100%;
 	text-align: center;
@@ -82,4 +106,58 @@
 
 .services .text {
 	line-height: 1.4583rem;
+}
+
+@media (max-width: 1366px) {
+	.services {
+		gap: 1.5rem;
+		margin-top: 3.75rem;
+	}
+	
+	.services .title {
+		line-height: 6.625rem;
+	}
+	
+	.services .feature-box {
+		width: 21.5rem;
+	}
+}
+
+@media (max-width: 1220px) {
+	.services {
+		gap: 1rem;
+		margin-top: 3.125rem;
+	}
+	
+	.services .title {
+		line-height: 5.625rem;
+	}
+	
+	.services .feature-box {
+		width: 18.5rem;
+		height: 19.5rem;
+	}
+	
+	#box1 {
+		height: 26.125rem;
+	}
+	
+	.services .text-box {
+		height: 8.125rem;
+		padding: 0.625rem 0.9375rem;
+	}
+	
+	.services .text {
+		line-height: 1.25rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.services {
+		grid-template-areas:
+			'title box1'
+			'box2 box1'
+			'box3 box4'
+			'box5 box6';
+	}
 }

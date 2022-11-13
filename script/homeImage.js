@@ -24,9 +24,7 @@ function showSlides(n) {
 
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.opacity = "0";
-		slides[i].style.width = "0";
 	}
 	slides[slideIndex - 1].style.opacity = "1";
-	slides[slideIndex - 1].style.width = "100%";
 	slides[slideIndex - 1].style.transition = "all 1.5s ease-in-out";
 }

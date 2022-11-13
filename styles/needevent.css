@@ -1,7 +1,19 @@
+@keyframes spin {
+	from {
+		 transform:rotate(0deg);
+	} to {
+		 transform:rotate(360deg);
+	}
+}
+
 .needevent {
+	margin: 5.625rem 0 5.6875rem;
+	padding-top: 6.25rem;
+}
+
+#form {
 	display: flex;
 	justify-content: space-between;
-	margin: 11.875rem 0 5.6875rem;
 }
 
 .form-box {
@@ -11,28 +23,41 @@
 .needevent .title {
 	position: relative;
 	text-align: left;
+	width: max-content;
 	margin-bottom: 2.5rem;
 	padding-left: 1.875rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.needevent .title:hover {
+	line-height: 3.75rem;
+	padding-bottom: 1.875rem;
 }
 
 .needevent .title:before {
 	content: "";
 	position: absolute;
+	bottom: 0;
 	left: 0;
 	width: 0.625rem;
 	height: 100%;
 	background-color: var(--clr-primary-1);
+	transition: all 0.3s ease-in-out;
+}
+
+.needevent .title:hover:before {
+	height: 50%;
 }
 
 input {
-	width: 39.375rem;
+	width: 37.5rem;
 	height: 3.125rem;
 	font-size: 24px;
 	color: var(--clr-white);
 	background: transparent;
 	border: none;
 	border-bottom: 0.1875rem solid var(--clr-primary-1);
-	margin-top: 2.5rem;
+	margin: 2.5rem 0 0 1.875rem;
 }
 
 input::placeholder {
@@ -45,14 +70,19 @@ input::placeholder {
 	width: 29.375rem;
 }
 
-.needevent .text-1 {
+.text1-box .text-1 {
 	line-height: 3.125rem;
 	font-size: 40px;
 }
 
-.needevent img {
+.text1-box img {
 	position: absolute;
 	margin: -1.875rem 0 0 17.5rem;
+	transition: margin 0.3s ease-in-out;
+}
+
+.text1-box:hover img {
+	margin-left: 18.75rem;
 }
 
 .needevent select {
@@ -93,5 +123,119 @@ input::placeholder {
 }
 
 .needevent .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
 	width: 100%;
+}
+
+.needevent .button img {
+	display: none;
+	width: 3.125rem;
+	height: 3.125rem;
+}
+
+.button-text {
+	width: 100%;
+	text-align: center;
+	line-height: 1.875rem;
+	font-size: 20px;
+}
+
+@media (max-width: 1366px) {
+	.needevent {
+		margin-top: 4.375rem;
+	}
+
+	.form-box {
+		width: 38.4375rem;
+	}
+
+	input,
+	input::placeholder {
+		font-size: 22px;
+	}
+
+	input {
+		width: 34.375rem;
+	}
+
+	.confirm-box {
+		width: 27.1825rem;
+	}
+
+	.text1-box .text-1 {
+		font-size: 36px;
+	}
+
+	.needevent select,
+	.needevent option {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.needevent {
+		margin-top: 3.75rem;
+	}
+
+	.form-box {
+		width: 33.125rem;
+	}
+
+	input,
+	input::placeholder {
+		font-size: 20px;
+	}
+	
+	input {
+		width: 28.155rem;
+		margin-top: 2.1875rem;
+	}
+
+	.confirm-box {
+		width: 23.125rem;
+	}
+
+	.text1-box .text-1 {
+		line-height: 2.8125rem;
+		font-size: 32px;
+	}
+
+	.text1-box img {
+		width: 6.25rem;
+		margin: -1.5625rem 0 0 15rem;
+	}
+	
+	.text1-box:hover img {
+		margin-left: 16.25rem;
+	}
+
+	.needevent select,
+	.needevent option {
+		font-size: 17px;
+	}
+
+	.needevent select {
+		height: 3.4375rem;
+		margin: 4.0625rem 0;
+		padding: 1rem 1.875rem 0.75rem 1.25rem;
+	}
+
+	.button-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.text1-box .text-1 {
+		line-height: 2.8125rem;
+		font-size: 32px;
+	}
+
+	.text1-box img {
+		width: 5rem;
+		margin: -1.5625rem 0 0 10rem;
+	}
 }
