@@ -55,6 +55,7 @@
 	bottom: 0;
 	left: 0;
 	z-index: 2;
+	margin-top: 1.875rem;
 }
 
 .cases-box {
@@ -96,10 +97,6 @@
 	width: 31.25rem;
 	line-height: 1.5625rem;
 	margin-bottom: 0.625rem;
-}
-
-.cases .buttons {
-	margin-top: 1.875rem;
 }
 
 @media (max-width: 1366px) {
@@ -162,7 +159,7 @@
 		line-height: 3.75rem;
 		padding-bottom: 0.625rem;
 	}
-	
+
 	.cases .boxes {
 		flex-direction: column;
 		height: max-content;
@@ -176,7 +173,6 @@
 	}
 
 	.caseText,
-	.cases .buttons,
 	.cases-box {
 		position: initial;
 	}
@@ -192,5 +188,125 @@
 
 	.cases .buttons {
 		margin: -1.25rem 0 1.25rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.cases {
+		margin-top: 6.25rem;
+		padding-top: 0;
+	}
+
+	.cases .title {
+		line-height: 4.375rem;
+		margin: 0;
+	}
+
+	.cases .boxes {
+		flex-direction: column-reverse;
+		margin-top: 1.25rem;
+	}
+	
+	.cases .image-box { 
+		height: 20rem;
+	}
+
+	.cases .image-text {
+		line-height: 1.875rem;
+		font-size: 30px;
+		padding: 9.0625rem 0;
+	}
+
+	.cases .text-box {
+		position: relative;
+		height: max-content;
+	}
+
+	.cases .count {
+		line-height: 3.125rem;
+		font-size: 45px;
+		margin: 1.25rem 0 1.25rem;
+	}
+
+	.cases .subtitle {
+		font-size: 32px;
+		margin-bottom: 1.25rem;
+	}
+
+	.cases .text {
+		width: 100%;
+		line-height: 1.40625rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.cases .buttons {
+		top: 0;
+		margin: 1.25rem 0 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.cases .title {
+		line-height: 3.75rem;
+	}
+
+	.cases .title:hover {
+		line-height: 2.5rem;
+		padding-bottom: 1.25rem;
+	}
+
+	.cases .image-box { 
+		height: 17.5rem;
+	}
+
+	.cases .image-text {
+		font-size: 24px;
+		padding: 7.8125rem 0;
+	}
+
+	.cases .count {
+		line-height: 2.8125rem;
+		font-size: 42px;
+	}
+
+	.cases .subtitle {
+		line-height: 1.875rem;
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	.cases .title {
+		line-height: 2.5rem;
+		padding-right: 0.625rem;
+	}
+
+	.cases .title:hover {
+		line-height: 1.875rem;
+		padding-bottom: 0.625rem;
+	}
+
+	.cases .title:before {
+		width: 0.3125rem;
+	}
+
+	.cases .image-box {
+		height: 15rem;
+	}
+
+	.cases .image-text {
+		line-height: 1.25rem;
+		font-size: 20px;
+		padding: 6.875rem 0;
+	}
+
+	.cases .count {
+		line-height: 2.5rem;
+		font-size: 40px;
+	}
+
+	.cases .subtitle {
+		line-height: 1.25rem;
+		font-size: 20px;
 	}
 }

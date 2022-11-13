@@ -259,6 +259,11 @@
 	.about .title {
 		line-height: 3.75rem;
 	}
+	
+	.about .title:hover {
+		line-height: 2.5rem;
+		padding-bottom: 1.25rem;
+	}
 
 	.about .boxes {
 		height: 17.5rem;
@@ -291,6 +296,11 @@
 	.about .title {
 		line-height: 2.5rem;
 		padding-left: 0.625rem;
+	}
+
+	.services .title:hover {
+		line-height: 1.875rem;
+		padding-top: 0.625rem;
 	}
 
 	.about .title:before {
@@ -330,6 +340,7 @@
 	.about .feature-box#box3 {
 		width: 100%;
 		grid-area: box3;
+		margin-top: 2.1875rem;
 	}
 
 	.about .subtitle {

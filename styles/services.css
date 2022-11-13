@@ -193,6 +193,7 @@
 
 	.services .image-text {
 		font-size: 32px;
+		padding-top: 5rem;
 	}
 
 	.services .subtitle {
@@ -206,18 +207,89 @@
 
 @media (max-width: 768px) {
 	.services {
-		display: block;
+		grid-template-areas:
+			'title title'
+			'box1 box2'
+			'box3 box4'
+			'box5 box6';
 		margin-top: 6.25rem;
 		padding-top: 0;
+		gap: 1.25rem;
 	}
 
-	.services .title,
-	.services .feature-box {
+	.services .title {
 		width: 100%;
+		letter-spacing: 0;
+		margin: 0;
 	}
-
+	
+	.services #box1,
 	.services .feature-box {
 		height: 20.625rem;
+	}
+
+	.services .feature-box {
+		width: 43.142vw;
+	}
+
+	.services .text-box {
+		height: 9.375rem;
+		padding: 1.25rem;
+	}
+
+	.services .subtitle {
+		line-height: 1.875rem;
+		font-size: 20px;
+	}
+	
+	.services .text {
+		line-height: 1.4583rem;
+		font-size: 15px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media (max-width: 650px) {
+	.services .title {
+		line-height: 3.75rem;
+	}
+	
+	.services .title:hover {
+		line-height: 2.5rem;
+		padding-bottom: 1.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.services {
+		display: block;
+	}
+
+	.services .title {
+		line-height: 2.5rem;
+		padding-left: 0.625rem;
+	}
+
+	.sercices .title:hover {
+		line-height: 1.875rem;
+		padding-bottom: 0.625rem;
+	}
+
+	.services .title:before {
+		width: 0.3125rem;
+	}
+
+	.services #box1,
+	.services .feature-box {
+		height: 91.667vw;
+		width: 100%;
 		margin-top: 1.25rem;
+	}
+
+	.services .image-text {
+		font-size: 30px;
 	}
 }
