@@ -17,6 +17,7 @@ function currentSlide(n) {
 
 function showWhyweSlides(n) {
 	let slides = document.getElementsByClassName("whywe-box");
+	let text = document.getElementById("text");
 	let circle = document.getElementsByClassName("circle");
 	
 	if (n < 1) { 
@@ -29,11 +30,14 @@ function showWhyweSlides(n) {
 
 	if (window.innerWidth <= 768) {
 		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.right = "250px";
 			slides[i].style.opacity = "0";
 			slides[i].style.transition = "all 1.5s ease-in-out";
 			circle[i].style.width = "0.25rem";
 			circle[i].style.height = "0.25rem";
 		}
+
+		slides[slideWhyweIndex - 1].style.right = "5.556vw";
 		slides[slideWhyweIndex - 1].style.opacity = "1";
 		slides[slideWhyweIndex - 1].style.transition = "all 1.5s ease-in-out";
 		circle[slideWhyweIndex - 1].style.width = "0.625rem";

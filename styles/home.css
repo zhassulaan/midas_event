@@ -22,6 +22,11 @@
 	margin-top: 3.125rem;
 }
 
+.home-box img {
+	width: 100%;
+	height: 100%;
+}
+
 .home .text-box,
 .home .buttons,
 .home .image-box {
@@ -85,7 +90,6 @@
 }
 
 .home-box {
-	opacity: 0;
 	position: absolute;
 	right: 0;
 	width: 100%;
@@ -254,6 +258,10 @@
 	.home .buttons,
 	.home .image-box {
 		display: none;
+	}
+
+	.home .button {
+		display: block;
 	}
 }
 

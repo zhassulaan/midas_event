@@ -30,6 +30,12 @@ function validation() {
 			success.style.display = "block";
 			text.textContent = "Ваша заявка оформлена!";
 		}, 3000); 
+
+		var params = { from_name: user.value, from_phone: phone.value, from_email: email.value, from_event: celebrity.value }
+		emailjs.send("service_li2ez09", "template_geh3k6n", params)
+		.then(function(res){
+			console.log("success", res.status);
+		})
 	} else {
 		form.classList.remove("valid");
 		form.classList.add("invalid");
