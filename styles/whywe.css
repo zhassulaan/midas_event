@@ -147,6 +147,12 @@
 		text-align: right;
 		font-size: 50px;
 		padding: 0 1.875rem 0 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.whywe .title:hover {
+		line-height: 3.125rem;
+		padding-bottom: 1.25rem;
 	}
 		
 	.whywe .title:before {
@@ -160,6 +166,12 @@
 		height: 4.375rem;
 		background-color: var(--clr-primary-1);
 		margin-left: 1.25rem;
+		transition: all 0.3s ease-in-out;
+	}
+	
+	.whywe .title:hover:after {
+		height: 2.1875rem;
+		margin-top: 2.1875rem;
 	}
 
 	.whywe .features {
@@ -216,8 +228,17 @@
 		font-size: 40px;
 	}
 
+	.whywe .title:hover {
+		line-height: 2.5rem;
+	}
+
 	.whywe .title:after {
 		height: 3.75rem;
+	}
+
+	.whywe .title:hover:after {
+		height: 1.875rem;
+		margin-top: 1.875rem;
 	}
 
 	.whywe .feature-box {
@@ -238,10 +259,20 @@
 		padding: 0 0.625rem 0 0;
 	}
 
+	.whywe .title:hover {
+		line-height: 1.875rem;
+		padding-bottom: 0.625rem;
+	}
+
 	.whywe .title:after {
 		width: 0.3125rem;
 		height: 2.5rem;
 		margin-left: 0.3125rem;
+	}
+
+	.whywe .title:hover:after {
+		height: 1.25rem;
+		margin-top: 1.25rem;
 	}
 
 	.whywe .feature-box {

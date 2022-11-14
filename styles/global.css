@@ -292,6 +292,18 @@ p {
     .content {
         width: 88.889vw;
     }
+
+	.button {
+		display: block;
+		width: 100%;
+		border: none;
+		background-color: var(--clr-primary-1);
+	}
+	
+	.button:hover {
+		background-color: transparent;
+    	border: 1px solid var(--clr-white);
+	}
 }
 
 @media (max-width: 650px) {
@@ -300,7 +312,7 @@ p {
         font-size: 72px;
     }
 
-    h2, h4 {
+    h2 {
         font-size: 45px;
     }
 }

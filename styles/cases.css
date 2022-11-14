@@ -202,6 +202,11 @@
 		margin: 0;
 	}
 
+	.cases .title:hover {
+		line-height: 3.125rem;
+		margin-bottom: 1.25rem;
+	}
+
 	.cases .boxes {
 		flex-direction: column-reverse;
 		margin-top: 1.25rem;
@@ -252,7 +257,6 @@
 
 	.cases .title:hover {
 		line-height: 2.5rem;
-		padding-bottom: 1.25rem;
 	}
 
 	.cases .image-box { 

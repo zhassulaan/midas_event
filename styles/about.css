@@ -210,6 +210,11 @@
 		margin-bottom: 1.875rem;
 	}
 
+	.about .title:hover {
+		line-height: 3.125rem;
+		padding-bottom: 1.25rem;
+	}	
+
 	.about-box .image-text {
 		font-size: 30px;
 		padding: 9.0625rem 0;
@@ -262,7 +267,6 @@
 	
 	.about .title:hover {
 		line-height: 2.5rem;
-		padding-bottom: 1.25rem;
 	}
 
 	.about .boxes {
@@ -298,9 +302,9 @@
 		padding-left: 0.625rem;
 	}
 
-	.services .title:hover {
+	.about .title:hover {
 		line-height: 1.875rem;
-		padding-top: 0.625rem;
+		padding-bottom: 0.625rem;
 	}
 
 	.about .title:before {

@@ -120,3 +120,86 @@
 		font-size: 17px;
 	}
 }
+
+@media (max-width: 768px) {
+	.contacts {
+		margin: 0 0 3.125rem;
+	}
+	
+	.contacts .boxes {
+		flex-direction: column;
+	}
+
+	.contact-box,
+	.social-box {
+		width: 100%;
+	}
+
+	.contacts .title {
+		text-align: right;
+		line-height: 4.375rem;
+		padding: 0 1.875rem 0 0;
+		margin: -5rem 0 1.875rem;
+	}
+	
+	.contacts .title:before {
+		right: 0;
+		left: auto;
+	}
+
+	.needevent .title:hover {
+		line-height: 3.125rem;
+		padding-bottom: 1.25rem;
+	}	
+
+	.contact-box .text {
+		font-size: 20px;
+	}
+	
+	.social-box .subtitle {
+		line-height: 2.5rem;
+		font-size: 36px;
+		margin-right: 0;
+	}
+
+	.social-box .text {
+		line-height: 1.25rem;
+		font-size: 15px;
+		margin-top: 1.25rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.contacts .title {
+		line-height: 3.75rem;
+	}
+	
+	.contacts .title:hover {
+		line-height: 2.5rem;
+	}
+
+	.social-box .subtitle {
+		font-size: 30px;
+		margin-top: 1.875rem;
+	}
+
+	.social-box .text {
+		margin-top: 0.625rem;
+	}
+	
+	.social-icons {
+		margin-top: 1.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.contacts .title {
+		line-height: 2.5rem;
+		padding-left: 0.625rem;
+	}
+
+	.contacts .title:hover {
+		line-height: 1.875rem;
+		padding-bottom: 0.625rem;
+	}
+}

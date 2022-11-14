@@ -43,3 +43,31 @@
 	font-size: 18px;
 	animation: animateMaximize 0.2s linear;
 }
+
+@media (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 3.125rem;
+	}
+
+	.policy-text,
+	.athenaplus {
+		width: 75%;
+		line-height: 1.25rem;
+		font-size: 14px;
+		margin: 0 auto;
+	}
+	
+	.policy-text {
+		height: max-content;
+		margin-bottom: 1.25rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.policy-text,
+	.athenaplus {
+		width: 100%;
+	}
+}

@@ -241,18 +241,6 @@
 	.home .image-box {
 		display: none;
 	}
-
-	.home .button {
-		display: block;
-		width: 100%;
-		border: none;
-		background-color: var(--clr-primary-1);
-	}
-	
-	.home .button:hover {
-		background-color: transparent;
-    	border: 1px solid var(--clr-white);
-	}
 }
 
 @media (max-width: 650px) {
@@ -265,6 +253,11 @@
 @media (max-width: 480px) {
 	.home .subtitle {
 		margin-bottom: 1.875rem;
+	}
+
+	.texts .text-1,
+	.texts .text-2 {
+		width: 100%;
 	}
 
 	.texts .text-1 {

@@ -388,13 +388,17 @@
                 <form id="form" action="#">
                     <div class="form-box">
                         <h2 class="title">НУЖЕН ИВЕНТ?</h2>
+                        <div class="text1-box first">
+                            <p class="text-1">Оставьте заявку и мы вам поможем</p>
+                            <img src="/assets/arrow.svg" alt="open arrow">
+                        </div>
                         <input type="text" id="user" name="user" placeholder="Ваше имя *">
                         <input type="tel" id="phone" name="phone" pattern="^\d{3}?\d{4}?\d{2}?\d{2}$" placeholder="Ваш телефон *" maxlength="11">
                         <input type="email" id="email" name="email" placeholder="Ваш e-mail *">
                     </div>
 
                     <div class="confirm-box">
-                        <div class="text1-box">
+                        <div class="text1-box second">
                             <p class="text-1">Оставьте заявку и мы вам поможем</p>
                             <img src="/assets/arrow.svg" alt="open arrow">
                         </div>
@@ -408,12 +412,14 @@
                             <option value="option 5" label="option 5"></option>
                         </select>
 
-                        <p class="text-2">Нажимая на кнопку “отправить заявку” принимаете условия политики конфиденциальности</p>
+                        <div class="confirm">
+                            <p class="text-2">Нажимая на кнопку “отправить заявку” принимаете условия политики конфиденциальности</p>
 
-                        <div class="send-btn button" id="button" onclick="validation()">
-                            <img src="/assets/loading.svg" alt="loading" id="loading">
-                            <img src="/assets/success.svg" alt="success" id="success">
-                            <p id="btn-text" class="button-text">Отправить заявку</p>
+                            <div class="send-btn button" id="button" onclick="validation()">
+                                <img src="/assets/loading.svg" alt="loading" id="loading">
+                                <img src="/assets/success.svg" alt="success" id="success">
+                                <p id="btn-text" class="button-text">Отправить заявку</p>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -423,7 +429,7 @@
         </div>
     </main>
 
-    <!-- <div class="main2 container">
+    <div class="main2 container">
         <div class="frame"></div>
 
         <section class="contacts content" id="contacts">
@@ -488,6 +494,6 @@
             </p>
             </div>
         </footer>
-    </div> -->
+    </div>
 </body>
 </html>

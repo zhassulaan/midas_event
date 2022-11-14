@@ -49,6 +49,10 @@
 	height: 50%;
 }
 
+.first {
+	display: none;
+}
+
 input {
 	width: 37.5rem;
 	height: 3.125rem;
@@ -293,5 +297,113 @@ input::placeholder {
 		margin: 3.125rem 0 2.5rem;
 		padding: 0.75rem 1.875rem 0.5rem 1.25rem;
 	}
+}
 
+@media (max-width: 768px) {
+	.needevent {
+		margin: 4.375rem 0 8.75rem;
+		padding: 0;
+	}
+
+	#form {
+		flex-direction: column;
+	}
+
+	.form-box,
+	input,
+	.confirm-box {
+		width: 100%;
+	}
+
+	.needevent .title {
+		line-height: 4.375rem;
+		margin: 0;
+	}
+
+	.needevent .title:hover {
+		line-height: 3.125rem;
+		padding-bottom: 1.25rem;
+	}	
+
+	.first {
+		display: block;
+	}
+
+	.text1-box {
+		width: 17.5rem;
+		margin-left: auto;
+	}
+	
+	.text1-box .text-1 {
+		text-align: right;
+		line-height: 1.875rem;
+		font-size: 20px;
+		margin: 1.25rem 0 0 auto;
+	}
+
+	.text1-box img {
+		width: max-content;
+		margin: -1.25rem 0 0 2.5rem;
+		transform: rotate(180deg);
+	}
+	
+	.text1-box:hover img {
+		margin-left: 1.25rem;
+	}
+
+	.second {
+		display: none;
+	}
+
+	input {
+		height: 2.5rem;
+		margin-left: 0;
+	}
+	
+	input,
+	input::placeholder {
+		font-size: 20px;
+	}
+
+	.needevent select {
+		width: 100%;
+		margin: 1.875rem auto;
+	}
+
+	.needevent select,
+	.needevent option {
+		font-size: 18px;
+	}
+
+	.confirm {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.confirm .text-2 {
+		font-size: 12px;
+		margin: 1.25rem 0 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.needevent .title {
+		line-height: 3.75rem;
+	}
+	
+	.needevent .title:hover {
+		line-height: 2.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.needevent .title {
+		line-height: 2.5rem;
+		padding-left: 0.625rem;
+	}
+
+	.needevent .title:hover {
+		line-height: 1.875rem;
+		padding-bottom: 0.625rem;
+	}
 }
