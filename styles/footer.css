@@ -1,6 +1,6 @@
 .main2 {
 	position: relative;
-	background-image: url(/assets/main2.png);
+	background-image: url('../assets/main2.png');
 	background-size: cover;
 	z-index: 3;
 }
