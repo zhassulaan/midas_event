@@ -290,7 +290,12 @@
 		padding-bottom: 0.625rem;
 	}
 
-	.cases .title:before {
+	.cases .count {
+		padding-left: 0.625rem;
+	}
+
+	.cases .title:before,
+	.cases .count:before {
 		width: 0.3125rem;
 	}
 

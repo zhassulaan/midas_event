@@ -28,6 +28,10 @@
 	width: 73.125rem;
 }
 
+.close {
+	display: none;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -79,11 +83,19 @@
 
 @media (max-width: 768px) {
 	.header {
-		display: none;
+		left: -20rem;
 		width: 51.389vw;
 		max-width: 20rem;
 		background-color: var(--clr-primary-1);
 		padding: 4.375rem 0 16.875rem;
+	}
+
+	.close {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 1.25rem;
 	}
 
 	.nav-menu {
@@ -100,6 +112,10 @@
 	.nav-link {
 		line-height: 1.875rem;
 		font-size: 20px;
+	}
+
+	.nav-link:hover {
+		color: var(--clr-black);
 	}
 
 	.navbar .button {

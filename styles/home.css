@@ -4,6 +4,10 @@
 	z-index: 1;
 }
 
+.toggle {
+	display: none;
+}
+
 .home .subtitle {
 	line-height: 3.125rem;
 	letter-spacing: 0.2em;
@@ -48,7 +52,10 @@
 
 .texts .text-2 {
 	position: relative;
+	display: flex;
+	align-items: center;
 	text-align: right;
+	height: 3.75rem;
 	font-size: 18px;
 	margin-bottom: 1.875rem;
 	padding-right: 1.875rem;
@@ -211,6 +218,13 @@
 	.home {
 		margin: 9.375rem 0 12.5rem;
 		padding-top: 0;
+	}
+	
+	.toggle {
+		display: block;
+		position: absolute;
+		top: 0;
+		margin-top: 1.875rem;
 	}
 
 	.home .boxes {

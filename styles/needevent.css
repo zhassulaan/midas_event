@@ -406,4 +406,8 @@ input::placeholder {
 		line-height: 1.875rem;
 		padding-bottom: 0.625rem;
 	}
+
+	.needevent .title:before {
+		width: 0.3125rem;
+	}
 }

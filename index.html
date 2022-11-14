@@ -25,19 +25,21 @@
     <!-- HEADER -->
     <div class="main1 container">
         <header class="header content" id="header">
+            <img src="/assets/close.svg" alt="close" class="close" onclick="closeNavbar()">
+
             <div class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">О компании</a>
+                        <a href="#about" class="nav-link" onclick="clickLink()">О компании</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">Услуги</a>
+                        <a href="#services" class="nav-link" onclick="clickLink()">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#cases" class="nav-link">Кейсы</a>
+                        <a href="#cases" class="nav-link" onclick="clickLink()">Кейсы</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contacts" class="nav-link">Контакты</a>
+                        <a href="#contacts" class="nav-link" onclick="clickLink()">Контакты</a>
                     </li>
                 </ul>
                 
@@ -51,6 +53,9 @@
         <script src="script/navbar.js"></script>
 
         <section class="home content" id="home">
+            <img src="/assets/toggle.svg" alt="toggle" class="toggle" onclick="openNavbar()">
+            <script src="script/toggle.js"></script>
+
             <h5 class="subtitle">Ивент-агенство</h5>
             <h1 class="title typing"></h1>
             <script src="script/typing.js"></script>
@@ -228,15 +233,25 @@
                     </div>
 
                     <div class="buttons">
-                        <div class="arrow" onclick="plusWhyweSlides(-1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
-                            </svg>
+                        <div class="btns circles">
+                            <div class="circle" onclick="openWhyweSlides(1)"></div>
+                            <div class="circle" onclick="openWhyweSlides(2)"></div>
+                            <div class="circle" onclick="openWhyweSlides(3)"></div>
+                            <div class="circle" onclick="openWhyweSlides(4)"></div>
+                            <div class="circle" onclick="openWhyweSlides(5)"></div>
                         </div>
-                        <div class="arrow" onclick="plusWhyweSlides(1)">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
-                            </svg>
+    
+                        <div class="btns">
+                            <div class="arrow" onclick="plusWhyweSlides(-1)">
+                                <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
+                                </svg>
+                            </div>
+                            <div class="arrow" onclick="plusWhyweSlides(1)">
+                                <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
 

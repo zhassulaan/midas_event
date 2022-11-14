@@ -212,7 +212,25 @@
 
 	.whywe .buttons {
 		display: flex;
+		align-items: center;
 		margin-top: calc(5.625rem + 4 * 1.354167rem);
+	}
+
+	.whywe .btns {
+		display: flex;
+		align-items: center;
+	}
+
+	.circles {
+		margin-right: 15.833vw;
+	}
+
+	.circle {
+		width: 0.25rem;
+		height: 0.25rem;
+		background-color: var(--clr-white);
+		border-radius: 50%;
+		margin-right: 5.256vw;
 	}
 }
 

@@ -1,9 +1,13 @@
 let slideWhyweIndex = 1;
-showAboutSlides(slideWhyweIndex);
+showWhyweSlides(slideWhyweIndex);
 
 // Previous / Next controls
 function plusWhyweSlides(n) {
 	showWhyweSlides(slideWhyweIndex += n);
+}
+function openWhyweSlides(n) {
+	slideWhyweIndex = n;
+	showWhyweSlides(slideWhyweIndex);
 }
 
 // Thumbnail image controls
@@ -13,6 +17,7 @@ function currentSlide(n) {
 
 function showWhyweSlides(n) {
 	let slides = document.getElementsByClassName("whywe-box");
+	let circle = document.getElementsByClassName("circle");
 	
 	if (n < 1) { 
 		slideWhyweIndex = slides.length;
@@ -22,10 +27,16 @@ function showWhyweSlides(n) {
 		slideWhyweIndex = 1;
 	} 
 
-	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.opacity = "0";
-		slides[i].style.transition = "all 1.5s ease-in-out";
+	if (window.innerWidth <= 768) {
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].style.opacity = "0";
+			slides[i].style.transition = "all 1.5s ease-in-out";
+			circle[i].style.width = "0.25rem";
+			circle[i].style.height = "0.25rem";
+		}
+		slides[slideWhyweIndex - 1].style.opacity = "1";
+		slides[slideWhyweIndex - 1].style.transition = "all 1.5s ease-in-out";
+		circle[slideWhyweIndex - 1].style.width = "0.625rem";
+		circle[slideWhyweIndex - 1].style.height = "0.625rem";
 	}
-	slides[slideWhyweIndex - 1].style.opacity = "1";
-	slides[slideWhyweIndex - 1].style.transition = "all 1.5s ease-in-out";
 }
