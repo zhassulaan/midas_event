@@ -97,22 +97,24 @@
                     </div>
                 </div>
 
-                <div class="image-box home-box">
-                    <!-- <h4 class="image-text">Фото-карусель</р4> -->
-                    <img src="assets/picture1.png" alt="">
-                </div>
-                <div class="image-box home-box">
-                    <img src="assets/picture2.png" alt="">
-                    <!-- <h4 class="image-text">Фото-карусель2</р4> -->
-                </div>
-                <div class="image-box home-box">
-                    <h4 class="image-text">Фото-карусель3</р4>
-                </div>
-                <div class="image-box home-box">
-                    <h4 class="image-text">Фото-карусель4</р4>
-                </div>
-                <div class="image-box home-box">
-                    <h4 class="image-text">Фото-карусель5</р4>
+                <div class="images">
+                    <div class="image-box home-box">
+                        <!-- <h4 class="image-text">Фото-карусель</р4> -->
+                        <img src="assets/picture1.png" alt="">
+                    </div>
+                    <div class="image-box home-box">
+                        <img src="assets/picture2.png" alt="">
+                        <!-- <h4 class="image-text">Фото-карусель2</р4> -->
+                    </div>
+                    <div class="image-box home-box">
+                        <h4 class="image-text">Фото-карусель3</р4>
+                    </div>
+                    <div class="image-box home-box">
+                        <h4 class="image-text">Фото-карусель4</р4>
+                    </div>
+                    <div class="image-box home-box">
+                        <h4 class="image-text">Фото-карусель5</р4>
+                    </div>
                 </div>
 
                 <a href="#needevent">
@@ -381,18 +383,18 @@
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
+                    </div>
 
-                        <div class="buttons">
-                            <div class="arrow" onclick="plusCasesSlides(-1)">
-                                <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
-                                </svg>
-                            </div>
-                            <div class="arrow" onclick="plusCasesSlides(1)">
-                                <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
-                                </svg>
-                            </div>
+                    <div class="buttons">
+                        <div class="arrow" onclick="plusCasesSlides(-1)">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.37114e-07 10L17 20L17 -7.43094e-07L4.37114e-07 10Z"/>
+                            </svg>
+                        </div>
+                        <div class="arrow" onclick="plusCasesSlides(1)">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 10L-1.15735e-06 20L-2.83122e-07 -7.43094e-07L17 10Z"/>
+                            </svg>
                         </div>
                     </div>
 
@@ -425,9 +427,9 @@
                             <p class="text-1">Оставьте заявку и мы вам поможем</p>
                             <img src="assets/arrow.svg" alt="open arrow">
                         </div>
-                        <input type="text" id="user" name="user" placeholder="Ваше имя *">
-                        <input type="tel" id="phone" name="phone" pattern="^\d{3}?\d{4}?\d{2}?\d{2}$" placeholder="Ваш телефон *" maxlength="11">
-                        <input type="email" id="email" name="email" placeholder="Ваш e-mail *">
+                        <input type="text" id="user" name="user" placeholder="Ваше имя *"/>
+                        <input type="text" id="phone" name="phone" placeholder="Ваш телефон *" pattern="^\d{3}?\d{4}?\d{2}?\d{2}$" data-mask="+_ (___) ___-__-__"/>
+                        <input type="email" id="email" name="email" placeholder="Ваш e-mail *"/>
                     </div>
 
                     <div class="confirm-box">
@@ -457,6 +459,7 @@
                     </div>
                 </form>
                 
+                <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
                 <script src="script/formValidation.js"></script>
                 <script src="https://smtpjs.com/v3/smtp.js"></script>
             </section>
