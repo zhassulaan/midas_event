@@ -231,7 +231,8 @@ p {
     }
 
     .button {
-        font-size: 18px;
+        height: 2.8125rem;
+        font-size: 17px;
     }
 }
 
@@ -262,6 +263,12 @@ p {
 
     .content {
         width: 88.28125vw;
+    }
+
+    .button {
+        width: 10.25rem;
+        height: 2.5rem;
+        font-size: 16px;
     }
 }
 
