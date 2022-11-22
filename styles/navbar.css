@@ -98,14 +98,46 @@
 @media (max-width: 992px) {
 	.navbar {
 		width: 88.28125vw;
+		align-items: center;
+	}
+
+	.nav-menu {
+		display: grid;
+		grid-template-areas: 'navItem1 navItem1 navItem2 navItem2 navItem3 navItem3 navItem4 navItem4'
+									'phone1 phone1 phone1 phone2 phone2 phone2 phone2 phone2';
+		gap: 0.625rem 0;
 	}
 
 	.nav-item {
 		margin-right: 2.1875rem;
 	}
 
+	#navItem1 {
+		grid-area: navItem1;
+	}
+
+	#navItem2 {
+		grid-area: navItem2;
+	}
+
+	#navItem3 {
+		grid-area: navItem3;
+	}
+
+	#navItem4 {
+		grid-area: navItem4;
+	}
+
 	.phone {
 		margin-right: 1.25rem;
+	}
+	
+	#phone1 {
+		grid-area: phone1;
+	}
+	
+	#phone2 {
+		grid-area: phone2;
 	}
 
 	.nav-link {
@@ -135,6 +167,7 @@
 	}
 
 	.nav-menu {
+		display: flex;
 		flex-direction: column;
 		align-items: start;
 		gap: 0.625rem;

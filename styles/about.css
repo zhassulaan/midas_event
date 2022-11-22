@@ -48,6 +48,11 @@
 	background-color: var(--clr-primary-2);
 }
 
+.about-box img {
+	width: 100%;
+	height: 100%;
+}
+
 .about-box .image-text {
 	height: 100%;
 	text-align: center;
@@ -193,7 +198,7 @@
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 	.about {
 		margin-top: 1.25rem;
 		padding-top: 1.25rem;
@@ -202,9 +207,7 @@
 	.about .buttons {
 		display: none;
 	}
-}
 
-@media (max-width: 768px) {
 	.about .boxes {
 		height: 20rem;
 		margin-bottom: 1.875rem;
