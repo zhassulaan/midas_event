@@ -35,7 +35,7 @@ var success = document.getElementById("success");
 		}, 3000); 
 
 		var params = { from_name: user.value, from_phone: phone.value, from_email: email.value, from_event: celebrity.value }
-		emailjs.send("service_hllt9bm", "template_qmkwhg5", params)
+		emailjs.send("service_k5w9s1a", "template_qmkwhg5", params)
 		.then(function(res){
 			console.log("success", res.status);
 		})
