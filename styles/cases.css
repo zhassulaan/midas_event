@@ -265,7 +265,7 @@
 
 	.cases .buttons {
 		top: 0;
-		margin: 1.25rem 0 0;
+		margin: 21.25rem 0 0;
 	}
 }
 
@@ -295,6 +295,10 @@
 	.cases .subtitle {
 		line-height: 1.875rem;
 		font-size: 24px;
+	}
+
+	.cases .buttons {
+		margin-top: 18.85rem;
 	}
 }
 
