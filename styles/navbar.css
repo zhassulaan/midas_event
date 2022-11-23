@@ -155,7 +155,7 @@
 		width: 51.389vw;
 		max-width: 20rem;
 		background-color: var(--clr-primary-1);
-		padding: 4.375rem 0 16.875rem;
+		padding: 4.375rem 0 calc(100vh - (4.375rem + 14.375rem));
 	}
 
 	.close {
